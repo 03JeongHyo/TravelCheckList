@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ECEFFF, #2a5eef); 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; 
+    height: 80vh; 
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.image-section img {
+    max-width: 90%;
+    height: auto;
+
+}
+.image-section p {
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1.2; 
+    margin-top: 10px;
+}
+
+.login-form {
+    flex: 1;
+    margin-top: 90px;
+    padding: 20px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+.form-group input::placeholder {
+    color: #fff;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff; 
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.102); 
+    color: #000; 
+}
+
+.login-b {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.login-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #2a5eef;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+button:hover {
+    background-color: #204fd2; 
+}
+
+.find {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-links {
+    display: flex;
+    gap: 15px;
+}
+
+.right-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left-links a, .right-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.left-links a:hover, .right-links a:hover {
+    text-decoration: underline;
+}
