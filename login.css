@@ -27,12 +27,12 @@ body {
 }
 
 .image-section img {
-    max-width: 90%;
+    max-width: 70%;
     height: auto;
 
 }
 .image-section p {
-    font-size: 35px;
+    font-size: 33px;
     color: #ffffff;
     text-align: center;
     font-weight: 800;
@@ -66,7 +66,7 @@ body {
 }
 
 .form-group input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 1px solid #fff; 
     border-radius: 10px;
@@ -82,11 +82,12 @@ body {
 
 .login-button {
     display: block;
-    width: 100%;
+    width: 90%;
     padding: 15px;
     background-color: #2a5eef;
     color: white;
     text-decoration: none;
+    border: none;
     border-radius: 4px;
     font-size: 16px;
     text-align: center;
