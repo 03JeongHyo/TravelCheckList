@@ -1,3 +1,5 @@
+
+
 //문서 완전히 로드된 후 초기화 함수 호출
 document.addEventListener('DOMContentLoaded', () => {
   ButtonEvents();
@@ -74,13 +76,13 @@ const NextClick = () => {
 
 const determinePage = (travelType, durationType) => {
   if (travelType === 'domestic' && durationType === 'short')
-    return 'domestic-short.html';
+    return 'dom_short.html';
   if (travelType === 'domestic' && durationType === 'long')
-    return 'domestic-long.html';
+    return 'dom_long.html';
   if (travelType === 'international' && durationType === 'short')
     return 'inter_short.html';
   if (travelType === 'international' && durationType === 'long')
-    return 'international-long.html';
+    return 'intern_long.html';
 
   return '';
 };

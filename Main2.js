@@ -1,11 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const message = localStorage.getItem('loginSuccess');
-  if (message === "true") {
-      alert("로그인 되었습니다");
-      localStorage.removeItem('loginSuccess');
-  }
+    const message = localStorage.getItem('loginSuccess');
+    if (message === "true") {
+        alert("로그인 되었습니다");
+        localStorage.removeItem('loginSuccess');
+    }
 
-
+    // 로그아웃 버튼 -> 바로 index.html로 이동
+    const logoutButton = document.getElementById('logoutButton'); 
+    if (logoutButton) {
+        logoutButton.addEventListener('click', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'index.html'; // 바로 index.html로 이동
+        });
+    }
+});
 //section2 효과
 document.addEventListener('scroll', function() {
   const section2Box = document.querySelector('.section2box');
@@ -18,7 +26,7 @@ document.addEventListener('scroll', function() {
       section2Box.classList.remove('visible');
   }
 });
-  // section3 애니메이션 설정
+  // section3 애니메이션 
   const elements = document.querySelectorAll('.title-box');
   const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -33,13 +41,6 @@ document.addEventListener('scroll', function() {
   elements.forEach(element => {
       observer.observe(element);
   });
-});
 
-// 로그아웃 버튼 클릭 이벤트
-document.getElementById('logoutButton').addEventListener('click', function(event) {
-  event.preventDefault();
-  if (confirm('로그아웃 하시겠습니까?')) {
-      window.location.href = 'index.html';
-  }
-});
 
+  
