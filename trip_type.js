@@ -82,7 +82,7 @@ const determinePage = (travelType, durationType) => {
   if (travelType === 'international' && durationType === 'short')
     return 'inter_short.html';
   if (travelType === 'international' && durationType === 'long')
-    return 'intern_long.html';
+    return 'inter_long.html';
 
   return '';
 };
